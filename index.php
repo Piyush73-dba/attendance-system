@@ -108,7 +108,7 @@
      <!-- FOOTER -->
       <footer style="background:; height:120%;">
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy;    2024  &middot;  developed by  <a href="https://github.com/Piyush73-dba">Piyush Kumar Yadav </a></p>
+        <p>&copy;   2024 © All Rights Reserved developed by  <a href="https://github.com/Piyush73-dba">Piyush Kumar Yadav </a></p>
       </footer>
 
     </div><!-- /.container -->
