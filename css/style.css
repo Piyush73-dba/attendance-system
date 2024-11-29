@@ -1,3 +1,180 @@
-#header{padding: 0px 10px 10px 10px;box-shadow: 0px -5px 19px 10px lightblue;background: rgba(111, 24, 24, 1);color: white;margin-bottom: 50px;}#pie,#chart {display:inline-block;}#chart {width:65%;margin:10px;}#sub-menu{margin-top:-50px;}.class{border:1px solid grey; border-radius:5px; text-align:center;width:150px;margin:10px;padding:10px;float:left;cursor:pointer;position:relative;}.class:hover{box-shadow:0px 0px 10px black;} 
-.class:hover .delete-class-warning{display:block !important;position:absolute;top:-15px;right:-15px;border-radius:50%;} .no-decoration{text-decoration:none !important;}#addClass{font-size: 80px;padding: 10px;}.modal-content{text-align:center;padding-bottom:20px;}
-.modal-content li{margin:5px;}.modal-content input,.modal-content select{margin:20px;width:92%;}.student-record{float:left;border:1px solid grey;margin:2px;padding:4px;width:175px;text-align:center;}#studentRecords{margin:10px;}.delete-class-warning{display:none !important;}.classes{cursor:pointer;margin:10px;font-size:20px;}.classes .list p{border:1px solid lightgrey;display:inline-block;margin:10px;padding:10px;font-size:14px !important;font-weight: 100 !important;}dd{margin:5px;}
+/* Header Section */
+#header {
+    padding: 0 10px 10px 10px;
+    box-shadow: 0 -5px 19px 10px lightblue;
+    background: rgba(111, 24, 24, 1);
+    color: white;
+    margin-bottom: 50px;
+    /* Add some responsiveness to header */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Pie and Chart Section */
+#pie, #chart {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+}
+
+#chart {
+    width: 65%;
+    margin: 10px;
+}
+
+/* Submenu */
+#sub-menu {
+    margin-top: -50px;
+}
+
+/* Class Elements */
+.class {
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 150px; /* Use max-width instead of fixed width for responsiveness */
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.class:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.class:hover .delete-class-warning {
+    display: block !important;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+}
+
+/* Link Styling */
+.no-decoration {
+    text-decoration: none !important;
+}
+
+/* Add Class Button */
+#addClass {
+    font-size: 80px;
+    padding: 10px;
+    /* Make font size responsive */
+    font-size: 5vw;
+}
+
+/* Modal Content */
+.modal-content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.modal-content li {
+    margin: 5px;
+}
+
+.modal-content input,
+.modal-content select {
+    margin: 20px;
+    width: 92%;
+}
+
+/* Student Record */
+.student-record {
+    float: left;
+    border: 1px solid grey;
+    margin: 2px;
+    padding: 4px;
+    width: 100%;
+    max-width: 175px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#studentRecords {
+    margin: 10px;
+}
+
+/* Delete Class Warning */
+.delete-class-warning {
+    display: none !important;
+}
+
+/* Classes List */
+.classes {
+    cursor: pointer;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.classes .list p {
+    border: 1px solid lightgrey;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px !important;
+    font-weight: 100 !important;
+}
+
+/* Definition List */
+dd {
+    margin: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    #chart {
+        width: 100%; /* Full width on small screens */
+        margin: 0;
+    }
+
+    .class {
+        width: 100%; /* Make class items take full width */
+        max-width: none; /* Remove max width */
+        float: none; /* Stack vertically */
+        margin-bottom: 10px;
+    }
+
+    .student-record {
+        width: 100%; /* Full width for student record */
+        max-width: none;
+    }
+
+    #addClass {
+        font-size: 10vw; /* Make button font responsive */
+    }
+
+    .classes .list p {
+        font-size: 16px; /* Increase font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust layout for very small screens */
+    #header {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .modal-content input,
+    .modal-content select {
+        width: 100%; /* Full width for input/select */
+    }
+
+    .classes .list p {
+        font-size: 14px; /* Adjust font size further */
+    }
+
+    .class, .student-record {
+        width: 100%; /* Full width for both class and student records */
+    }
+
+    #addClass {
+        font-size: 12vw; /* Larger font for smaller screens */
+    }
+}
