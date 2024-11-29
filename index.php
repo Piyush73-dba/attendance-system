@@ -111,7 +111,7 @@
 
 <footer class="text-center text-lg-start" style="background-color: #101010;">
   <div class="container d-flex justify-content-center py-5">
-    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #5890FF;">
       <i class="fab fa-facebook-f"></i>
     </button>
     <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
