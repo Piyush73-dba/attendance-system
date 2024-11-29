@@ -126,9 +126,9 @@
   </div>
 
   <!-- Copyright -->
-  <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2020 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  <div class="text-center text-white p-3" style="background-color: rgba(255, 255, 255);">
+    © 2024 Copyright: All Right Reserved
+    <a class="text-white" href="https://github.com/Piyush73-dba">Developed by Piyush Yadav</a>
   </div>
   <!-- Copyright -->
 </footer>
