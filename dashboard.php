@@ -2,14 +2,17 @@
 session_start();
 
 // Redirect if not logged in
-if (!isset($_SESSION['student_id'])) {
+if (!isset($_SESSION['user_id'])) {
     header('Location: index.php');
     exit();
 }
 
-// Get student data from session
-$student_id = $_SESSION['student_id'];
-// You can also fetch the student data from a database, such as their name, email, and attendance history.
+// Get user information from session
+$user_id = $_SESSION['user_id'];
+$user_name = $_SESSION['name'];
+$user_type = $_SESSION['user_type'];
+
+// Here you can fetch the student's attendance data from the database
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +29,7 @@ $student_id = $_SESSION['student_id'];
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="dashboard.php">Student Dashboard</a>
+            <a class="navbar-brand" href="dashboard.php">Welcome, <?php echo $user_name; ?></a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active"><a class="nav-link" href="attendance.php">View Attendance</a></li>
@@ -42,8 +45,8 @@ $student_id = $_SESSION['student_id'];
             <div class="col-md-8 mx-auto">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <h2>Welcome, Student!</h2>
-                        <p>Your recent attendance data will be displayed here.</p>
+                        <h2>Welcome, <?php echo $user_name; ?>!</h2>
+                        <p>Your attendance overview will be displayed here.</p>
 
                         <!-- Example Attendance Table -->
                         <h4>Attendance Overview</h4>
