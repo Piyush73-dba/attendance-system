@@ -24,7 +24,9 @@
       margin: 0; /* Remove default body margin */
     }
     main {
-      flex: 1; /* Pushes the footer to the bottom */
+      flex: 1;
+      margin-top: 70px; /* Space for the fixed navbar */
+      padding: 20px; /* Add padding for form visibility */
     }
     footer {
       background-color: #282c34;
