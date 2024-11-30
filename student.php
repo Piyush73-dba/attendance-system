@@ -68,7 +68,7 @@
   </div><!-- /.container -->
    <div>
    <footer style="background-color: #282c34; color: #ffffff; text-align: center; padding: 20px 10px; font-family: Arial, sans-serif; font-size: 16px;">
-    <div id="footer" style="margin-bottom: 0px;">
+    <div id="footer" style="margin-bottom: 10px;">
         <p>© 2024 Copyright: All Rights Reserved</p>
     </div>
     <div id="footer1">

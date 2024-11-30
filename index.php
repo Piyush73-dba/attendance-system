@@ -106,32 +106,18 @@
       </tbody>
     </table>
   </div>
-     <!-- FOOTER -->
-      <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container my-5">
-
-<footer class="text-center text-lg-start" style="background-color: #101010;">
-  <div class="container d-flex justify-content-center py-5">
-    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #5890FF;">
-      <i class="fab fa-facebook-f"></i>
-    </button>
-    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-      <i class="fab fa-youtube"></i>
-    </button>
-    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-      <i class="fab fa-instagram"></i>
-    </button>
-    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-      <i class="fab fa-twitter"></i>
-    </button>
-  </div>
-
-  <!-- Copyright -->
-  <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2024 Copyright: All Right Reserved
-    <a class="text-white" href="https://github.com/Piyush73-dba">Developed by Piyush Yadav</a>
-  </div>
-  <!-- Copyright -->
+  <footer style="background-color: #282c34; color: #ffffff; text-align: center; padding: 20px 10px; font-family: Arial, sans-serif; font-size: 16px;">
+    <div id="footer" style="margin-bottom: 10px;">
+        <p>© 2024 Copyright: All Rights Reserved</p>
+    </div>
+    <div id="footer1">
+        <a href="https://github.com/Piyush73-dba" target="_blank" rel="noopener noreferrer" 
+           style="color: #61dafb; text-decoration: none; font-weight: bold; transition: color 0.3s ease;"
+           onmouseover="this.style.color='#21a1f1'; this.style.textDecoration='underline';"
+           onmouseout="this.style.color='#61dafb'; this.style.textDecoration='none';">
+            Developed by Piyush Yadav
+        </a>
+    </div>
 </footer>
 
 </div>
