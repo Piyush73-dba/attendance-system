@@ -20,7 +20,24 @@ if (isset($_SESSION['student_id'])) {
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/login.js"></script>
+    <script>
+        // JavaScript to toggle between login and signup forms
+        function toggleForms() {
+            var loginForm = document.getElementById('login');
+            var signupForm = document.getElementById('signup');
+            var toggleButton = document.getElementById('toggleButton');
+
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                signupForm.style.display = 'none';
+                toggleButton.innerText = 'Sign Up';
+            } else {
+                loginForm.style.display = 'none';
+                signupForm.style.display = 'block';
+                toggleButton.innerText = 'Back to Login';
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Fixed navbar -->
@@ -48,6 +65,7 @@ if (isset($_SESSION['student_id'])) {
         <h2>For Students</h2>
         <hr>
         <h4>Login</h4>
+        <!-- Login form -->
         <form method="POST" action="login_handler.php" id="login">
             <div class="form-group">
                 <label>Email ID</label>
@@ -59,8 +77,9 @@ if (isset($_SESSION['student_id'])) {
             </div>
             <button class="btn btn-primary pull-right">Login</button>
         </form>
-        <h4>Signup</h4>
-        <form method="POST" action="signup_handler.php" id="signup">
+
+        <!-- Signup form (initially hidden) -->
+        <form method="POST" action="signup_handler.php" id="signup" style="display:none;">
             <div class="form-group">
                 <label>Name</label>
                 <input class="form-control" placeholder="Name" type="text" name="name" required>
@@ -75,6 +94,9 @@ if (isset($_SESSION['student_id'])) {
             </div>
             <button class="btn btn-primary pull-right">Sign Up</button>
         </form>
+
+        <!-- Button to toggle between login and signup -->
+        <button id="toggleButton" class="btn btn-link" onclick="toggleForms()">Sign Up</button>
     </div>
 </body>
 </html>
