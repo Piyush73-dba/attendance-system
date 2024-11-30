@@ -67,9 +67,17 @@
   </div>
   </div><!-- /.container -->
    <div>
-    <footer>
-     <p>© 2024 Copyright: All Right Reserved</p><a class="text-white" href="https://github.com/Piyush73-dba">Developed by Piyush Yadav</a>
-    </footer>
+   <footer>
+    <div id="footer">
+        <p>© 2024 Copyright: All Rights Reserved</p>
+    </div>
+    <div id="footer1">
+        <a class="text-white" href="https://github.com/Piyush73-dba" target="_blank" rel="noopener noreferrer">
+            Developed by Piyush Yadav
+        </a>
+    </div>
+</footer>
+
    </div>  
  </body>
 </html>
