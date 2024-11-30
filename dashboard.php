@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (!isset($_SESSION["user_id"])) {
-    header("Location: login.php"); // Redirect to login if not authenticated
+if (!isset($_SESSION['student_id'])) {
+    header("Location: index.php");
     exit();
 }
 ?>
@@ -9,11 +9,10 @@ if (!isset($_SESSION["user_id"])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Attendance Dashboard</title>
+    <title>Dashboard</title>
 </head>
 <body>
-    <h1>Welcome, <?= htmlspecialchars($_SESSION["username"]); ?>!</h1>
-    <p>Welcome to the Attendance Management System.</p>
+    <h1>Welcome to the Dashboard</h1>
     <a href="logout.php">Logout</a>
 </body>
 </html>
