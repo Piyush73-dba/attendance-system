@@ -26,6 +26,33 @@
 #sub-menu {
     margin-top: -50px;
 }
+footer {
+    background-color: #282c34; /* Dark background for a modern look */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding: 20px 10px; /* Add padding for spacing */
+    font-family: Arial, sans-serif; /* Clean font choice */
+    font-size: 16px;
+}
+
+/* Styling for the copyright section */
+#footer {
+    margin-bottom: 10px; /* Space between copyright and developer link */
+}
+
+/* Styling for the developer link */
+#footer1 a {
+    color: #61dafb; /* Soft blue color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#footer1 a:hover {
+    color: #21a1f1; /* Brighter blue on hover */
+    text-decoration: underline; /* Add underline on hover for clarity */
+}
+
 
 
 /* Class Elements */
@@ -68,32 +95,6 @@
     font-size: 5vw;
 }
 /* General footer styling */
-footer {
-    background-color: #282c34; /* Dark background for a modern look */
-    color: #ffffff; /* White text for contrast */
-    text-align: center;
-    padding: 20px 10px; /* Add padding for spacing */
-    font-family: Arial, sans-serif; /* Clean font choice */
-    font-size: 16px;
-}
-
-/* Styling for the copyright section */
-#footer {
-    margin-bottom: 10px; /* Space between copyright and developer link */
-}
-
-/* Styling for the developer link */
-#footer1 a {
-    color: #61dafb; /* Soft blue color for links */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-#footer1 a:hover {
-    color: #21a1f1; /* Brighter blue on hover */
-    text-decoration: underline; /* Add underline on hover for clarity */
-}
 
 
 /* Modal Content */
