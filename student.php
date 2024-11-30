@@ -67,16 +67,20 @@
   </div>
   </div><!-- /.container -->
    <div>
-   <footer>
-    <div id="footer">
+   <footer style="background-color: #282c34; color: #ffffff; text-align: center; padding: 20px 10px; font-family: Arial, sans-serif; font-size: 16px;">
+    <div id="footer" style="margin-bottom: 10px;">
         <p>© 2024 Copyright: All Rights Reserved</p>
     </div>
     <div id="footer1">
-        <a class="text-white" href="https://github.com/Piyush73-dba" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Piyush73-dba" target="_blank" rel="noopener noreferrer" 
+           style="color: #61dafb; text-decoration: none; font-weight: bold; transition: color 0.3s ease;"
+           onmouseover="this.style.color='#21a1f1'; this.style.textDecoration='underline';"
+           onmouseout="this.style.color='#61dafb'; this.style.textDecoration='none';">
             Developed by Piyush Yadav
         </a>
     </div>
 </footer>
+
 
    </div>  
  </body>
