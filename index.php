@@ -7,7 +7,7 @@ if (isset($_SESSION['student_id'])) {
     header('Location: dashboard.php'); // Redirect to student dashboard
     exit();
 } elseif (isset($_SESSION['teacher_id'])) {
-    header('Location: teacher.php'); // Redirect to teacher dashboard
+    header('Location: teacher_dashboard.php'); // Redirect to teacher dashboard
     exit();
 }
 ?>
